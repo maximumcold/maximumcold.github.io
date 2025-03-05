@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5e1ca;
+}
+
+.section {
+    outline: 2px solid #000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition:  opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1 {
+    color: d;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+#school-and-work {
+    background-color: #f4f0ed;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+#school-and-work > h3 {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+}
+#school-and-work  > p {
+    margin: 10px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f0ed;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+#projects > h3 {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+}
+#projects  > p {
+    margin: 10px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#projects > a {
+    display: inline-block;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    text-decoration: none;
+
+}
+
+#projects > a:hover {
+    background-color: #D3D3D3;
+}
+#contact {
+    background-color: #f4f0ed;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+#contact > h3 {
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+}
+#contact  > p {
+    margin: 10px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#contact > a {
+    display: grid;
+    justify-content: center;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+#contact > a:hover {
+    background-color: #D3D3D3;
+}
+@media (max-width: 768px) {
+    #school-and-work {
+        width: 90%;
+    }
+    #projects {
+        width: 90%;
+    }
+    #contact {
+        width: 90%;
+    }
+}
