@@ -10,7 +10,7 @@ body {
     outline: 2px solid #000;
     opacity: 0;
     transform: translateY(20px);
-    transition:  opacity 1s ease-out, transform 1s ease-out;
+    transition:  opacity 1.5s ease-out, transform 1s ease-out;
 }
 
 
@@ -44,6 +44,11 @@ h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 
+}
+#school-and-work  a{
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
 
 #projects {
